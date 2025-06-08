@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+    <h1>Calculadora</h1>
+</head>
+<body>
+    <section class="tela">
+            <input type="text" id="display"  placeholder="O resultado ficará aqui"/>
+            <div class="painelTela">
+                <input type="text" id="entrada1" placeholder="0"/>
+                <input type="text" id="operacaoSelecionada" placeholder="Futura operação" disabled/>
+                <input type="text" id="entrada2" placeholder="0"/>
+            </div>
+    </section>
+    <section class="painelBotoesOperacoes">
+        <div>
+            <button onclick="limpar()">Limpar</button>
+            <button onclick="somar()">+</button>
+            <button onclick="subtrair()">-</button>
+            <button onclick="dividir()">/</button>
+            <button onclick="multiplicar()">*</button>
+            <button onclick="resuldado()">resultado</button>
+        </div>
+    </section>
+    <section class="botoes">
+        <div class="botoesNumericos">
+            <button value="1" onclick="inserirValor(this.value)">1</button>
+            <button value="2" onclick="inserirValor(this.value)">2</button>
+            <button value="3" onclick="inserirValor(this.value)">3</button>
+            <button value="4" onclick="inserirValor(this.value)">4</button>
+            <button value="5" onclick="inserirValor(this.value)">5</button>
+            <button value="6" onclick="inserirValor(this.value)">6</button>
+            <button value="7" onclick="inserirValor(this.value)">7</button>
+            <button value="8" onclick="inserirValor(this.value)">8</button>
+            <button value="9" onclick="inserirValor(this.value)">9</button>
+            <button onclick="limpar()">C</button>
+            <button value="0" onclick="inserirValor(this.value)">0</button>
+            <button onclick="resultado()">=</button>
+        </div>
+    </section>
+    <script src="operacoes.js"></script>
+</body>
+</html>
